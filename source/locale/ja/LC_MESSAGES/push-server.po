@@ -1,0 +1,152 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017, SPI and others
+# This file is distributed under the same license as the Debian website
+# restructuring package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Debian website restructuring 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-01-07 19:35+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../source/push-server.rst:3
+msgid "Setting up a push server"
+msgstr ""
+
+#: ../../source/push-server.rst:5
+msgid "Setting up a push server consists of two basic tasks:"
+msgstr ""
+
+#: ../../source/push-server.rst:7
+msgid ":ref:`rsync-access` (for normal, \"\"pull mirroring\"\")"
+msgstr ""
+
+#: ../../source/push-server.rst:8
+msgid ":ref:`sshtrigger` (for \"\"pushing\"\" to other pull mirror)"
+msgstr ""
+
+#: ../../source/push-server.rst:10
+msgid ""
+"(For more information on what a push server is, please read :doc:`the "
+"explanation of push mirroring <push-mirroring>`.)"
+msgstr ""
+
+#: ../../source/push-server.rst:17
+msgid "Setting up rsync"
+msgstr ""
+
+#: ../../source/push-server.rst:19
+msgid ""
+"Install :program:`rsync` 2.1.1 or greater. If your site is running "
+"Debian, just install `rsync package "
+"<https://packages.debian.org/stable/net/rsync>`_."
+msgstr ""
+
+#: ../../source/push-server.rst:22
+msgid ""
+"Create :file:`/etc/rsyncd.conf` file and put something similar to this in"
+" it::"
+msgstr ""
+
+#: ../../source/push-server.rst:38
+msgid ""
+"Add an entry for each site you are pushing to in the "
+":file:`/etc/rsyncd/debian.secrets` file::"
+msgstr ""
+
+#: ../../source/push-server.rst:46
+msgid ""
+"You have now given the downstream mirrors access to the archive on your "
+"machine."
+msgstr ""
+
+#: ../../source/push-server.rst:49
+msgid ""
+"You will probably want to start the rsync daemon from inetd. To do this, "
+"you have to add rsync service in :file:`/etc/services` file (if it isn't "
+"already there), like this::"
+msgstr ""
+
+#: ../../source/push-server.rst:55
+msgid ""
+"To enable the daemon from inetd, add the following to your "
+":file:`/etc/inetd.conf` file::"
+msgstr ""
+
+#: ../../source/push-server.rst:60
+msgid ""
+"(Remember to send inetd an HUP signal to tell it to reread its config "
+"file after modifying the file.)"
+msgstr ""
+
+#: ../../source/push-server.rst:67
+msgid "Setting up ssh trigger mechanism"
+msgstr ""
+
+#: ../../source/push-server.rst:69
+msgid ""
+"Create a new ssh key for the account that you use to mirror Debian. Make "
+"sure you don't overwrite your original ssh key by using the ``-f`` "
+"option, for example:"
+msgstr ""
+
+#: ../../source/push-server.rst:73
+msgid ":kbd:`ssh-keygen -f ~/.ssh/identity.mysite`"
+msgstr ""
+
+#: ../../source/push-server.rst:75
+msgid ""
+"Make sure that the new public key (:file:`~/.ssh/identity.mysite.pub`) "
+"contains this at the beginning, with IPADDRESS being the IP of your "
+"upstream mirror::"
+msgstr ""
+
+#: ../../source/push-server.rst:81
+msgid "You need to set up a script that will contact the downstream mirrors."
+msgstr ""
+
+#: ../../source/push-server.rst:82
+msgid ""
+"Get :ref:`ftpsync script set <ftpsync>`, :file:`runmirrors` which is "
+"handling all needed tasks for you."
+msgstr ""
+
+#: ../../source/push-server.rst:83
+msgid "Edit"
+msgstr ""
+
+#: ../../source/push-server.rst:89
+msgid ""
+":kbd:`cp runmirrors.conf.sample runmirrors.conf` and :kbd:`cp "
+"runmirrors.mirror.sample runmirrors.mirror`, then configure the config "
+"file to suit your system."
+msgstr ""
+
+#: ../../source/push-server.rst:93
+msgid ""
+"Then list all your downstream mirrors inside runmirrors.mirror and the "
+"ftpsync/runmirror duo will do all the heavy lifting for you."
+msgstr ""
+
+#: ../../source/push-server.rst:97
+msgid ""
+"The effect will be that your system will try to ssh to your downstream "
+"mirrors, after your own mirror updated, so they can start their own "
+"updates. This assumes you gave your downstream mirror operators the ssh "
+"key you told runmirrors to use and that they added it to their own "
+":file:`~/.ssh/authorized_keys` as described above."
+msgstr ""
+
+#: ../../source/push-server.rst:102
+msgid "If you have any trouble with this, contact to mirrors@debian.org."
+msgstr ""
+

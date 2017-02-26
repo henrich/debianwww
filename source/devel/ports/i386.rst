@@ -1,0 +1,17 @@
+==============================================================
+Debian GNU/Linux on x86 Machines
+==============================================================
+
+Being the first architecture supported by Debian,
+most of the general Debian web pages apply to this port.
+
+There is some information specific to this architecture,
+however, that we will list here.
+
+
+Development
+==============================================================
+
+The build servers for this architecture are operated by
+<a href="https://dsa.debian.org/">DSA</a>.
+

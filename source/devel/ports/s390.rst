@@ -1,0 +1,48 @@
+===============================================================
+S/390 Port
+===============================================================
+
+Status
+===============================================================
+S/390 has been an officially supported Debian architecture
+since the release of Debian 3.0 (woody).
+
+
+S/390 porting team
+===============================================================
+The following people contributed to the Debian port to s390:
+
+ * Aurélien Jarno
+ * Bastian Blank
+ * Chu-yeon Park and Jae-hwa Park
+ * Frank Kirschner
+ * Frans Pop
+ * Gerhard Tonn
+ * Jochen Röhrig
+ * Matt Zimmerman
+ * Philipp Kern
+ * Richard Higson
+ * Stefan Gybas
+
+
+Development
+===============================================================
+
+One build server and the porterbox for the *s390x* architectures are
+currently hosted by `Informationstechnikzentrum Bund (ITZBund) <https://www.itzbund.de/>`_ .
+Other build servers are provided by 
+`Informatics Innovation Center, Karlsruhe Institute of Technology (KIT) <http://www.iic.kit.edu>`_
+and `Marist College <https://www.marist.edu/>`_ .
+We thank those hosters for their support!
+
+In the past `Millenux <http://www.millenux.de/>`_ and the
+`Linux Community Development System <https://www-03.ibm.com/systems/z/os/linux/support/community.html>`_
+hosted such build machines.
+
+
+Contact information
+===============================================================
+ 
+ * the `debian-s390 mailing list <https://lists.debian.org/debian-s390/>`_
+ * irc?
+

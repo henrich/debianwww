@@ -1,0 +1,101 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017, SPI and others
+# This file is distributed under the same license as the Debian website
+# restructuring package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Debian website restructuring 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-01-07 23:50+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../source/index.rst:8
+msgid "Debian mirrors"
+msgstr "Debian ミラー"
+
+#: ../../source/index.rst:15
+msgid "What is mirror in Debian?"
+msgstr "Debian におけるミラーとは何でしょう?"
+
+#: ../../source/index.rst:16
+msgid ""
+"Debian is distributed all around the world using `mirrors "
+"<http://foldoc.org/mirror+site>`_ in order to provide users with better "
+"access to our archive and to reduce the load on our servers."
+msgstr ""
+
+#: ../../source/index.rst:22
+msgid "Selecting mirror"
+msgstr "ミラーを選択する"
+
+#: ../../source/index.rst:23
+msgid "TBD"
+msgstr ""
+
+#: ../../source/index.rst:27
+msgid "List of Public Debian mirrors and its sponsors"
+msgstr "公開 Debian ミラーとそのスポンサー一覧"
+
+#: ../../source/index.rst:31
+msgid "List of Official Debian mirrors and its sponsors"
+msgstr "公式 Debian ミラーとそのスポンサー一覧"
+
+#: ../../source/index.rst:32
+#, fuzzy
+msgid "Official Debian archive mirrors are ..."
+msgstr "公式 Debian アーカイブミラーは…"
+
+#: ../../source/index.rst:34
+msgid ""
+"They get an address of the form ftp.\\ *<country code>*\\.debian.org "
+"(e.g. ftp.us.debian.org). These are the best advertised and most used "
+"sites; the face of Debian for most people. See :doc:`official-mirror`."
+msgstr ""
+"They get an address of the form ftp.\\ *<国コード>*\\.debian.org (例: "
+"ftp.jp.debian.org). These are the best advertised and most used sites; "
+"多くの人にとって Debian の顔となっています。:doc:`official-mirror` を参照してください。"
+
+#: ../../source/index.rst:41
+msgid "Mirror redirector service"
+msgstr "ミラーリダイレクトサービス"
+
+#: ../../source/index.rst:42
+msgid ""
+"If you don't know which mirror to use or your system moves around a lot, "
+"you can use the `mirror redirector service <https://deb.debian.org/>`_ in"
+" your `/etc/apt/sources.list "
+"<http://manpages.debian.org/man/5/sources.list>`_ file."
+msgstr ""
+"どのミラーを使えばいいのかわからない、あるいは頻繁にシステムを移動する場合は、`ミラーリダイレクトサービス "
+"<https://deb.debian.org/>`_ を使えます。`/etc/apt/sources.list "
+"<http://manpages.debian.org/man/5/sources.list>`_ ファイルに以下のように記載してください。"
+
+#: ../../source/index.rst:50
+msgid ""
+"It dynamically redirects package download requests to the best mirror "
+"available based on a number of factors such as mirror availability, "
+"location, architecture and freshness."
+msgstr ""
+
+#: ../../source/index.rst:56
+msgid "Setup new mirror"
+msgstr "新しいミラーを設定する"
+
+#: ../../source/index.rst:57
+msgid ""
+"Debian mirrors are maintained by volunteers, so if you are in a position "
+"to donate disk space and network connectivity, :doc:`setup mirror <setup-"
+"mirror>` and :doc:`submit it<submit-mirror>` to making Debian more "
+"accessible."
+msgstr ""
+
+

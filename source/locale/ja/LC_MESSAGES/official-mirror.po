@@ -1,0 +1,201 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017, SPI and others
+# This file is distributed under the same license as the Debian website
+# restructuring package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Debian website restructuring 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-01-07 23:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../source/official-mirror.rst:3
+msgid "List of Debian Official mirror"
+msgstr ""
+
+#: ../../source/official-mirror.rst:5
+msgid ""
+"Official Debian archive mirrors get an address of the form ftp.country "
+"code.debian.org. These are the best advertised and most used sites; the "
+"face of Debian for most people."
+msgstr ""
+
+#: ../../source/official-mirror.rst:10
+msgid ""
+"<toc-add-entry name=\"list\">List of official Debian archive mirrors"
+"</toc-add-entry>"
+msgstr ""
+
+#: ../../source/official-mirror.rst:12
+msgid "<officialarchivemirrors>"
+msgstr ""
+
+#: ../../source/official-mirror.rst:15
+msgid "Criteria"
+msgstr ""
+
+#: ../../source/official-mirror.rst:17
+msgid "To become an official mirror, it should meet the following criteria:"
+msgstr ""
+
+#: ../../source/official-mirror.rst:19
+msgid ""
+"The site should be reliable and be up 24 hours a day. The machine should "
+"not be heavily loaded."
+msgstr ""
+
+#: ../../source/official-mirror.rst:21
+msgid "The **whole** Debian archive should be mirrored."
+msgstr ""
+
+#: ../../source/official-mirror.rst:22
+msgid ""
+"Disk space commitments (with room for expansion) &mdash; see the :doc"
+":`mirror-size`."
+msgstr ""
+
+#: ../../source/official-mirror.rst:24
+msgid "The mirror should be updated with :ref:`ftpsync script <ftpsync>`."
+msgstr ""
+
+#: ../../source/official-mirror.rst:25
+msgid ""
+":doc:`push-mirroring` needs to be set up; feel free to contact us to get "
+"in touch with the maintainer of another mirror."
+msgstr ""
+
+#: ../../source/official-mirror.rst:27
+msgid ""
+"It should have a decent connectivity (relative to the respective "
+"country). Bandwidth equivalent to a 100Mbps connection or better is "
+"preferred; note that for developed countries, this minimum is much "
+"higher."
+msgstr ""
+
+#: ../../source/official-mirror.rst:30
+msgid ""
+"The routers in front of the server shouldn't have any global access bans "
+"or major limitations of bandwidth."
+msgstr ""
+
+#: ../../source/official-mirror.rst:32
+msgid ""
+"The server needs to be able to sustain the traffic, i.e. have reasonable "
+"limits on the HTTP, FTP and rsync daemons, including tuning the maximum "
+"number of connections in general and the maximum number of connections "
+"from a single IP."
+msgstr ""
+
+#: ../../source/official-mirror.rst:36
+msgid ""
+"The mirror hierarchy should be available under <kbd>/debian</kbd>. "
+"Rationale: for consistency between sites &mdash; you may simply place a "
+"symlink if you want to keep the mirror somewhere else, or set up a "
+"virtual host."
+msgstr ""
+
+#: ../../source/official-mirror.rst:40
+msgid "The mirror should be made available at least via these protocols:"
+msgstr ""
+
+#: ../../source/official-mirror.rst:42
+msgid "HTTP (http://your.server/debian/)"
+msgstr ""
+
+#: ../../source/official-mirror.rst:44
+msgid ""
+"HTTP is used because with HTTP/1.1 transfers have the potential of being "
+"more efficient than with FTP."
+msgstr ""
+
+#: ../../source/official-mirror.rst:47
+msgid "FTP (ftp://your.server/debian/)"
+msgstr ""
+
+#: ../../source/official-mirror.rst:49
+msgid "FTP is the most senior protocol, and still very widely used."
+msgstr ""
+
+#: ../../source/official-mirror.rst:51
+msgid "rsync (rsync://your.server::debian/)"
+msgstr ""
+
+#: ../../source/official-mirror.rst:53
+msgid ""
+"Rsync is the preferred method of mirroring, and one of the main functions"
+" of an official mirror is to help the proliferation of secondary mirrors."
+msgstr ""
+
+#: ../../source/official-mirror.rst:57
+msgid ""
+"The mirror should be registered as public mirror (using our :doc:`submit "
+"mirror information form <submit-mirror>`)."
+msgstr ""
+
+#: ../../source/official-mirror.rst:61
+msgid ""
+"Please note that these are just guidelines, but we will be more likely to"
+" accept your site as an official mirror if the above conditions are met. "
+"It is also generally desirable for the site to have a history of working "
+"as described above."
+msgstr ""
+
+#: ../../source/official-mirror.rst:66
+msgid ""
+"All applications for official sites, including exact information on "
+"bandwidth consumption and any limits, should be sent to "
+"mirrors@debian.org ."
+msgstr ""
+
+#: ../../source/official-mirror.rst:71
+msgid "Process"
+msgstr ""
+
+#: ../../source/official-mirror.rst:72
+msgid ""
+"Official mirrors are hosted by selected persons or groups who donate "
+"their resources as a service to all Debian users from their country."
+msgstr ""
+
+#: ../../source/official-mirror.rst:75
+msgid ""
+"Debian depends on information provided by users and mirror maintainers in"
+" order to make decisions about the mirror hierarchy. All constructive "
+"input regarding existing or missing official mirrors is welcome at "
+"mirrors@debian.org or at `debian-mirrors mailing list "
+"<https://lists.debian.org/debian-mirrors/>`_."
+msgstr ""
+
+#: ../../source/official-mirror.rst:80
+msgid ""
+"If there isn't already an ftp.<var>&lt;country&gt;</var>.debian.org for "
+"your country, any mirror maintainer can apply for their site to become "
+"the official one, provided it meets the criteria outlined below."
+msgstr ""
+
+#: ../../source/official-mirror.rst:84
+msgid ""
+"In countries where there is already an official mirror assigned, it is "
+"still possible to set up more official sites, but only if there is demand"
+" for such a thing. In large countries, like the US, and countries with "
+"more than one major backbone that aren't well connected, like Australia, "
+"it is even a good idea."
+msgstr ""
+
+#: ../../source/official-mirror.rst:90
+msgid ""
+"Usually, the first site will be given the aliases "
+"ftp.&lt;country&gt;.debian.org and ftp1.&lt;country&gt;.debian.org. "
+"Future sites will simply be given an alias of the second type with the "
+"number incremented appropriately."
+msgstr ""
+

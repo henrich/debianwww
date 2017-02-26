@@ -1,0 +1,36 @@
+Version: 8
+Codename: Jessie
+Arch: amd64 i386 armel armhf arm64 powerpc mips mipsel s390x ppc64el
+Release Date: 20150426
+Point Release: 8.6
+Point Release Date: 20160917 
+EOL: 
+LTS Arch: i386 amd64 armel armhf
+LTS EOL: 
+Archived: No
+Binary Archive: Yes
+
+Version: 7
+Codename: Wheezy
+Arch: 
+Release Date: 20150426
+Point Release: 7.9
+Point Release Date: 20160917 
+EOL: 
+LTS Arch: i386 amd64 armel armhf
+LTS EOL: 
+Archived: No
+Binary Archive: Yes
+
+Version: 6.0
+Codename: Squeeze
+Arch: 
+Release Date: 
+Point Release: 
+Point Release Date: 
+EOL: 
+LTS Arch: i386 amd64
+LTS EOL: 
+Archived: Yes
+Binary Archive: Yes
+

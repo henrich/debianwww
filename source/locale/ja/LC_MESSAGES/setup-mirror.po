@@ -1,0 +1,407 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017, SPI and others
+# This file is distributed under the same license as the Debian website
+# restructuring package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Debian website restructuring 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-01-07 19:35+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../source/setup-mirror.rst:3
+msgid "Setting up a Debian archive mirror"
+msgstr ""
+
+#: ../../source/setup-mirror.rst:6
+msgid "Whether to mirror"
+msgstr ""
+
+#: ../../source/setup-mirror.rst:8
+msgid ""
+"While we appreciate all new mirrors, every prospective mirror maintainer "
+"should make sure that they can answer these questions before trying to "
+"start their own mirror:"
+msgstr ""
+
+#: ../../source/setup-mirror.rst:12
+msgid ""
+"**Is a mirror the right choice?** Sometimes people mistakenly start a "
+"mirror, when they actually want to run a caching proxy, such as `apt-"
+"cacher-ng <https://packages.debian.org/apt-cacher-ng>`_."
+msgstr ""
+
+#: ../../source/setup-mirror.rst:15
+msgid ""
+"**Is a mirror necessary at my location?** Maybe there are already mirrors"
+" nearby."
+msgstr ""
+
+#: ../../source/setup-mirror.rst:16
+msgid ""
+"**Do I have the resources to host a mirror?** Mirrors take up "
+"considerable :doc:`mirror-size` and bandwidth, one has to be able to "
+"commit to the cost."
+msgstr ""
+
+#: ../../source/setup-mirror.rst:20
+msgid "What to mirror"
+msgstr ""
+
+#: ../../source/setup-mirror.rst:22
+msgid "Debian package archive"
+msgstr ""
+
+#: ../../source/setup-mirror.rst:24
+msgid ""
+"**debian/** archive is used to install Debian over the network, to build "
+"CDs from (with jigdo), and to upgrade already installed systems."
+msgstr ""
+
+#: ../../source/setup-mirror.rst:28
+msgid ""
+"**debian-security/** archives contain the security updates released by "
+"the Debian security team. It sounds interesting to everyone, but since "
+"the security updates are sporadic, one would have to mirror it very often"
+" to be up to date (or use :doc:`push-mirroring`) so **we do not recommend"
+" it**. Debian makes every effort to maintain the high availability of "
+"``security.debian.org`` instead."
+msgstr ""
+
+#: ../../source/setup-mirror.rst:36
+msgid ""
+"**debian-archive/** contains the true *archive*, the old and obsolete "
+"versions of Debian, its security update was already terminated. It will "
+"generally be interesting only to a small segment of users, so **we do not"
+" recommend it**. For more detail, see `debian-archive`."
+msgstr ""
+
+#: ../../source/setup-mirror.rst:42
+msgid "Debian install image archive"
+msgstr ""
+
+#: ../../source/setup-mirror.rst:44
+msgid ""
+"**debian-cd/** is an archive that isn't identical across all the "
+"different mirror servers. On some sites it contains jigdo templates to "
+"build CD images from (used in combination with files from debian/), on "
+"some it contains already built CD images, and on some sites both."
+msgstr ""
+
+#: ../../source/setup-mirror.rst:49
+msgid ""
+"Please see the page for `mirroring the CD images "
+"<$(HOME)/CD/mirroring/>`_ for further information on this."
+msgstr ""
+
+#: ../../source/setup-mirror.rst:53
+msgid ""
+"Please see :doc:`mirror-size` page for more precise information about "
+"mirror sizes."
+msgstr ""
+
+#: ../../source/setup-mirror.rst:57
+msgid "Where to mirror from"
+msgstr ""
+
+#: ../../source/setup-mirror.rst:59
+msgid ""
+"The :doc:`official-mirror` are meant to be a good place to mirror from. "
+"Any of the servers in the :doc:`mirror-list` that have the tags ``Type: "
+"Push-Primary`` or ``Type: Push-Secondary`` should be good to mirror from."
+" Please use one that is close to you both network-wise and "
+"geographically."
+msgstr ""
+
+#: ../../source/setup-mirror.rst:64
+msgid ""
+"There is no real difference between different *Push-Primary* mirror "
+"servers as far as mirroring is concerned. On the other hand, if many "
+"people use ftp.debian.org (and unfortunately, they do), this needlessly "
+"wastes the donated bandwidth."
+msgstr ""
+
+#: ../../source/setup-mirror.rst:71
+msgid ""
+"Many people seem to think that ``ftp.debian.org`` is the canonical "
+"location of Debian packages and that it will be best for them to mirror "
+"from that site. This is *not true*."
+msgstr ""
+
+#: ../../source/setup-mirror.rst:75
+msgid ""
+"``ftp.debian.org`` is merely one of several servers that get updated from"
+" an internal Debian server. That address is presently located on a single"
+" server, and it still exists mainly for backwards compatibility."
+msgstr ""
+
+#: ../../source/setup-mirror.rst:83
+msgid ""
+"Mirror administrators in the United States should mirror from "
+"ftp.us.debian.org (the official mirror address from the US, which is a "
+"Push-Primary mirror). But, since that address is also a round-robin alias"
+" for several machines, it usually makes sense to determine which of the "
+"components is the best and then mirror from that particular one."
+msgstr ""
+
+#: ../../source/setup-mirror.rst:89
+msgid ""
+"The upside of doing that is that it avoids the risk of failures when "
+"performing a two-stage rsync (different stages might end up on different "
+"machines during time windows where they have different data, causing a "
+"race condition). The downside is that it concentrates on a single site "
+"the performance of which may vary, but that is currently inherent to our "
+"mirror network in general."
+msgstr ""
+
+#: ../../source/setup-mirror.rst:100
+msgid "How to mirror with ftpsync"
+msgstr ""
+
+#: ../../source/setup-mirror.rst:102
+msgid "We recommend to use the **ftpsync scriptset** to mirror the archive."
+msgstr ""
+
+#: ../../source/setup-mirror.rst:104
+msgid "tarball from https://ftp-master.debian.org/ftpsync.tar.gz"
+msgstr ""
+
+#: ../../source/setup-mirror.rst:105
+msgid ""
+"git repository: :kbd:`git clone https://ftp-"
+"master.debian.org/git/archvsync.git`"
+msgstr ""
+
+#: ../../source/setup-mirror.rst:107
+msgid "Follow the :file:`README` file included to set up mirroring."
+msgstr ""
+
+#: ../../source/setup-mirror.rst:111
+msgid "Partial mirroring"
+msgstr ""
+
+#: ../../source/setup-mirror.rst:113
+msgid ""
+"Considering the already :doc:`mirror-size`, some people prefer to mirror "
+"only parts of it they need. *If you want to exclude something, you should"
+" exclude architectures*. With the recommended :ref:`ftpsync <ftpsync>`, "
+"this can be done by editing the **ARCH_EXCLUDE** variable."
+msgstr ""
+
+#: ../../source/setup-mirror.rst:119 ../../source/setup-mirror.rst:252
+msgid ""
+"We strongly advise against excluding the :file:`project/`, :file:`doc/` "
+"and other subdirectories. Usually these are minor in size and yet useful "
+"to users. Especially :file:`project/trace` helps very much if there are "
+"any mirror issues."
+msgstr ""
+
+#: ../../source/setup-mirror.rst:124
+msgid ""
+"It is possible to use other specially written scripts, but they are "
+"usually not necessary, and not recommended for official mirrors."
+msgstr ""
+
+#: ../../source/setup-mirror.rst:129
+msgid "Push-triggered mirroring"
+msgstr ""
+
+#: ../../source/setup-mirror.rst:131
+msgid ""
+":doc:`push-mirroring` is a form of mirroring that we have developed to "
+"minimize the time it takes for changes to the archive to reach mirrors. "
+"An upstream mirror uses an SSH trigger to tell the downstream mirror to "
+"update itself. The \"pushing\" is usually limited to a secure trigger "
+"that takes no variable data, so the rest of the mirroring process is "
+"simply \"\"pull\"\" like with a cron job."
+msgstr ""
+
+#: ../../source/setup-mirror.rst:138
+msgid ""
+"Push mirroring is necessary to keep multiple servers in synchronization "
+"(such as servers in DNS round-robin aliases like ``ftp.us.debian.org``), "
+"and we use it for our first and second tier mirrors. But as this method "
+"requires a bit more effort to set it up, it isn't commonly done for "
+"\"private\" mirrors."
+msgstr ""
+
+#: ../../source/setup-mirror.rst:146
+msgid "When to mirror"
+msgstr ""
+
+#: ../../source/setup-mirror.rst:147
+msgid ""
+"The main archive gets updated 4 times a day. The mirrors commonly start "
+"updating around 3:00, 9:00, 15:00 and 21:00 (all times UTC), but these "
+"are never fixed times and you should not fixate your mirror on them."
+msgstr ""
+
+#: ../../source/setup-mirror.rst:151
+msgid ""
+"Your mirror should update a few hours after one of the main archive "
+"mirror pulses. You should check if the site you're mirroring from leaves "
+"a time stamp file in their :file:`project/trace/` subdirectory. The time "
+"stamp file will be named like that site, and it will contain the "
+"completion time of their last mirror update. Add a couple of hours to "
+"that time (to be safe) and mirror then."
+msgstr ""
+
+#: ../../source/setup-mirror.rst:159
+msgid ""
+"**It is essential that your mirror is in sync with the main archive**. A "
+"minimum of 4 updates per 24 hours will ensure that your mirror is a true "
+"reflection of the archive. Please understand that mirrors that are not in"
+" sync with the main archive will not be listed in the official mirrors "
+"listing."
+msgstr ""
+
+#: ../../source/setup-mirror.rst:164
+msgid ""
+"The easiest way to automatically have the mirror run every day is to use "
+"cron. See :manpage:`crontab(1)` for details."
+msgstr ""
+
+#: ../../source/setup-mirror.rst:167
+msgid ""
+"Note that if your site is being triggered with :doc:`a push mechanism "
+"<push-mirroring>`, then you don't need to worry about any of this."
+msgstr ""
+
+#: ../../source/setup-mirror.rst:172
+msgid "Recommended additional settings"
+msgstr ""
+
+#: ../../source/setup-mirror.rst:174
+msgid ""
+"If you are going to make the Debian mirror available through HTTP, please"
+" add the following settings to your Apache configuration (presuming, of "
+"course, you will use Apache), within the ``Directory "
+"/path/to/your/debian/mirror`` block, where "
+":file:`/path/to/your/debian/mirror` should be the actual name of the "
+"directory where you keep the mirror::"
+msgstr ""
+
+#: ../../source/setup-mirror.rst:185
+msgid ""
+"This enables the directory indices and makes sure that following symlinks"
+" will work. The file names in the directory indices won't be truncated, "
+"and (mostly nonexistent) descriptions won't be shown."
+msgstr ""
+
+#: ../../source/setup-mirror.rst:191
+msgid "How to add a mirror to public mirror list"
+msgstr ""
+
+#: ../../source/setup-mirror.rst:192
+msgid ""
+"If you would like to have your mirror listed on public mirrors list "
+"please:"
+msgstr ""
+
+#: ../../source/setup-mirror.rst:194
+msgid "Ensure that your mirror synchronizes 4 times per 24 hours with the archive"
+msgstr ""
+
+#: ../../source/setup-mirror.rst:195
+msgid ""
+"Ensure that your mirror includes the source files for the architectures "
+"the mirror carries"
+msgstr ""
+
+#: ../../source/setup-mirror.rst:198
+msgid ""
+"Once the mirror is set up, it should be registered with :doc:`submit-"
+"mirror` in order to get included in :doc:`mirror-list` ."
+msgstr ""
+
+#: ../../source/setup-mirror.rst:203
+msgid "Misc mirror notes"
+msgstr ""
+
+#: ../../source/setup-mirror.rst:204
+msgid "The mirroring protocol which we strongly recommend is :command:`rsync`."
+msgstr ""
+
+#: ../../source/setup-mirror.rst:206
+msgid ""
+"Please do not mirror Debian using :command:`wget` and other tools based "
+"on FTP. They may seem to work well, but will have numerous issues (they "
+"can't detect hard links, it's harder to make partial mirrors, etc)."
+msgstr ""
+
+#: ../../source/setup-mirror.rst:210
+msgid ""
+"If you do use your own scripts, the minimal functionality that must be "
+"supported is as follows:"
+msgstr ""
+
+#: ../../source/setup-mirror.rst:213
+msgid ""
+"MUST perform a 2-stage sync The archive mirroring must be done in 2 "
+"stages. The first rsync run must ignore the index files.  The correct "
+"exclude options for the first rsync run are::"
+msgstr ""
+
+#: ../../source/setup-mirror.rst:220
+msgid ""
+"The first stage must not delete any files. The second stage should then "
+"transfer the above excluded files and delete files that no longer belong "
+"on the mirror."
+msgstr ""
+
+#: ../../source/setup-mirror.rst:224
+msgid ""
+"Rationale: if archive mirroring is done in a single stage, there will be "
+"periods of time during which the index files will reference files not yet"
+" mirrored."
+msgstr ""
+
+#: ../../source/setup-mirror.rst:228
+msgid ""
+"MUST not ignore pushes while running (for :doc:`push-mirroring`). If a "
+"push is received during a run of the mirror sync, it MUST NOT be ignored."
+"  The whole synchronization process must be rerun."
+msgstr ""
+
+#: ../../source/setup-mirror.rst:232
+msgid ""
+"Rationale: most implementations of Debian mirror scripts will leave the "
+"mirror in an inconsistent state in the event of a second push being "
+"received while the first sync is still running.  It is likely that in the"
+" near future, the frequency of pushes will increase."
+msgstr ""
+
+#: ../../source/setup-mirror.rst:237
+msgid "Run rsync with at least these options::"
+msgstr ""
+
+#: ../../source/setup-mirror.rst:241
+msgid ""
+"If you have extra disk space, also use the ``--delete-after`` option to "
+"avoid some of the temporary update problems."
+msgstr ""
+
+#: ../../source/setup-mirror.rst:244
+msgid ""
+"After rsync is done mirroring, add a time stamp file to the "
+":file:`project/trace/` subdirectory of the Debian mirror named after your"
+" server. This means running:"
+msgstr ""
+
+#: ../../source/setup-mirror.rst:248
+msgid ":kbd:`date -u .../debian/project/trace/your.server`"
+msgstr ""
+
+#: ../../source/setup-mirror.rst:250
+msgid "after your daily rsync is finished."
+msgstr ""
+

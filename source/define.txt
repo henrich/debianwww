@@ -1,0 +1,16 @@
+.. |current_leader| replace:: Mehdi Dogguy
+
+.. |unstable codename| replace:: "Sid"
+.. |testing codename| replace:: "Stretch"
+.. |stable codename| replace:: "Jessie"
+.. |oldstable codename| replace:: "Wheezy"
+.. |oldoldstable codename| replace:: "Squeeze"
+
+.. |stable version| replace:: 8
+.. |oldstable version| replace:: 7
+.. |oldoldstable version| replace:: 6.0
+
+.. |current stable version| replace:: 8.7
+.. |current oldstable version| replace:: 7.9
+.. |current oldoldstable version| replace:: 6.0.9
+

@@ -1,0 +1,81 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017, SPI and others
+# This file is distributed under the same license as the Debian website
+# restructuring package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Debian website restructuring 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-01-07 19:35+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../source/mirror-size.rst:3
+msgid "Mirror size"
+msgstr ""
+
+#: ../../source/mirror-size.rst:6
+msgid "How big is the Debian archive?"
+msgstr ""
+
+#: ../../source/mirror-size.rst:32
+msgid "size.data"
+msgstr ""
+
+#: ../../source/mirror-size.rst:34
+msgid ""
+"Note that the archive is constantly growing; testing will grow especially"
+" as a release approaches. Also, we do not recommend reducing size of a "
+"mirror by excluding specific distributions; exclude specific "
+"architectures instead, according to their <a "
+"href=\"http://popcon.debian.org/\">popularity</a>.</p>"
+msgstr ""
+
+#: ../../source/mirror-size.rst:40
+msgid "How big is the Debian Security archive?"
+msgstr ""
+
+#: ../../source/mirror-size.rst:42
+msgid "The debian-security archive is around 54 GB. ???fixed size??"
+msgstr ""
+
+#: ../../source/mirror-size.rst:45
+msgid "How big is the old Debian archive?"
+msgstr ""
+
+#: ../../source/mirror-size.rst:49
+msgid "How big is the Debian CD archive?"
+msgstr ""
+
+#: ../../source/mirror-size.rst:51
+msgid ""
+"The CD archive varies greatly across mirrors &mdash; the Jigdo files are "
+"around 100-150 MB per architecture, while the full DVD/CD images are "
+"around 15 GB each, plus extra space for the <q>update</q> CD images, "
+"Bittorrent files, etc."
+msgstr ""
+
+#: ../../source/mirror-size.rst:56
+msgid ""
+"For more information about the CD archive mirroring, please see the <a "
+"href=\"../CD/mirroring/\">Debian CD mirror pages</a>."
+msgstr ""
+
+#: ../../source/mirror-size.rst:60
+msgid "How big are the regular updates to the mirrors?"
+msgstr ""
+
+#: ../../source/mirror-size.rst:62
+msgid ""
+"For the main Debian archive, please see <a href=\"https://ftp-"
+"master.debian.org/size-quarter.png\">the graph of the daily run size</a>."
+msgstr ""
+
