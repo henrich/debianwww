@@ -27,7 +27,7 @@ Social Contract with the Free Software Community
 #. **Debian will remain 100% free**
 
    We provide the guidelines that we use to determine if a work
-   is "*free*" in the document entitled ":ref:`DFSG`.
+   is "*free*" in the document entitled ":ref:`DFSG`".
    We promise that the Debian system and
    all its components will be free according to these
    guidelines. We will support people who create or use both
